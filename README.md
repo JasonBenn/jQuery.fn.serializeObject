@@ -1,6 +1,6 @@
 ## tl,dr;
 
-serializeJSON(), when called on a selection of inputs, returns a JavaScript object.  `name` attributes become keys and `value` attributes become values.
+$.serializeJSON(), when called on a selection of inputs, returns a JavaScript object.  `name` attributes become keys and `value` attributes become values.
 
 ## examples
 
@@ -24,4 +24,4 @@ $('input').serializeJSON() => { work: { street: "320 3rd St", city: "San Fran", 
 ```
 
 ## installation
-Throw it in a `<script>` tag after jQuery but before your source code.
+Download the plugin with `curl -O https://raw.github.com/JasonBenn/jquery-serializeJSON/master/serialize-json.js`, and throw it in a `<script>` tag after jQuery and before your source code.
