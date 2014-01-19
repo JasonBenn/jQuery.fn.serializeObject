@@ -9,7 +9,7 @@ serializeJSON(), when called on a selection of inputs, returns a JavaScript obje
 <input type="text" name="home" value="95 Lansing St">
 ```
 ```
-$('input').serializeJSON() => { work: "360 3rd St", home: "95 Lansing St" }
+$('input').serializeJSON() => { work: "320 3rd St", home: "95 Lansing St" }
 ```
 
 serializeJSON also supports nesting:
@@ -20,7 +20,7 @@ serializeJSON also supports nesting:
 <input type="text" name="work.state" value="CA">
 ```
 ```
-$('input').serializeJSON() => { work: { street: "360 3rd St", city: "San Fran", state: "CA" } }
+$('input').serializeJSON() => { work: { street: "320 3rd St", city: "San Fran", state: "CA" } }
 ```
 
 ## installation
