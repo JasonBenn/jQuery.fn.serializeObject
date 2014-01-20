@@ -19,9 +19,25 @@
 
 <body>
 
-  <div id="flat">
-    <input type="text" name="work" value="320 3rd St">
-    <input type="text" name="home" value="95 Lansing St">
+  <div class="container" style="display: none">
+    <div id="one-simple">
+      <input type="text" name="work" value="320 3rd St">
+    </div>
+
+    <div id="many-simple">
+      <input type="text" name="work" value="320 3rd St">
+      <input type="text" name="home" value="95 Lansing St">
+    </div>
+
+    <div id="one-nested">
+      <input type="text" name="work.street" value="320 3rd St">
+    </div>
+
+    <div id="many-nested">
+      <input type="text" name="work.street" value="320 3rd St">
+      <input type="text" name="work.city" value="San Fran">
+      <input type="text" name="work.state" value="CA">
+    </div>
   </div>
 
 </body>
