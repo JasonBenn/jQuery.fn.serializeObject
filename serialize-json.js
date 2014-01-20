@@ -1,8 +1,10 @@
 $.fn.serializeJSON = function() {
-  var raw = _.map(this.serializeArray(), _.values)
+  var raw = this.serializeArray().map(function(input) {
+    return [input.name, input.value]
+  })
   var obj = {}
 
-  _.each(raw, function(pair) {
+  raw.forEach(function(pair) {
     var key = pair[0],
         value = pair[1]
     if (hasPeriod(key)) {
