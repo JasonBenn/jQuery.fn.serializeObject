@@ -24,4 +24,4 @@ $('input').serializeObject() => { work: { street: "320 3rd St", city: "San Fran"
 ```
 
 ## installation
-Download the plugin with `curl -O https://raw.github.com/JasonBenn/jquery-serializeObject/master/jquery-serialize-object.js`, and throw it in a `<script>` tag after jQuery and before your source code.
+Download the plugin with `curl -O https://raw.github.com/JasonBenn/jQuery.fn.serializeObject/master/jquery-serialize-object.js`, and throw it in a `<script>` tag after jQuery and before your source code.
