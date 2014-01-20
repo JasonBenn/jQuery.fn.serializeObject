@@ -1,6 +1,6 @@
 ## tl,dr;
 
-$.serializeJSON(), when called on a selection of inputs, returns a JavaScript object.  `name` attributes become keys and `value` attributes become values.
+$.serializeObject(), when called on a selection of inputs, returns a JavaScript object.  `name` attributes become keys and `value` attributes become values.
 
 ## examples
 
@@ -9,10 +9,10 @@ $.serializeJSON(), when called on a selection of inputs, returns a JavaScript ob
 <input type="text" name="home" value="95 Lansing St">
 ```
 ```
-$('input').serializeJSON() => { work: "320 3rd St", home: "95 Lansing St" }
+$('input').serializeObject() => { work: "320 3rd St", home: "95 Lansing St" }
 ```
 
-serializeJSON also supports nesting:
+serializeObject also supports nesting:
 
 ```
 <input type="text" name="work.street" value="320 3rd St">
@@ -20,8 +20,8 @@ serializeJSON also supports nesting:
 <input type="text" name="work.state" value="CA">
 ```
 ```
-$('input').serializeJSON() => { work: { street: "320 3rd St", city: "San Fran", state: "CA" } }
+$('input').serializeObject() => { work: { street: "320 3rd St", city: "San Fran", state: "CA" } }
 ```
 
 ## installation
-Download the plugin with `curl -O https://raw.github.com/JasonBenn/jquery-serializeJSON/master/serialize-json.js`, and throw it in a `<script>` tag after jQuery and before your source code.
+Download the plugin with `curl -O https://raw.github.com/JasonBenn/jquery-serializeObject/master/jquery-serialize-object.js`, and throw it in a `<script>` tag after jQuery and before your source code.

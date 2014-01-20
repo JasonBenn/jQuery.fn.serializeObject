@@ -1,5 +1,5 @@
 (function(jQuery) {
-  jQuery.fn.serializeJSON = function() {
+  jQuery.fn.serializeObject = function() {
     var raw = this.serializeArray().map(function(input) {
       return [input.name, input.value]
     })
